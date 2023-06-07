@@ -1,0 +1,40 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Batman"
+    },
+    {
+      "id": 2,
+      "name": "Thor"
+    },
+    {
+      "id": 3,
+      "name": "Homem De Ferro"
+    },
+    {
+      "id": 4,
+      "name": "Batman"
+    },
+    {
+      "id": 5,
+      "name": "Capitão América"
+    },
+    {
+      "id": 6,
+      "name": "Capitão Caverna"
+    },
+    {
+      "id": 7,
+      "name": "Venom"
+    },
+    {
+      "id": 8,
+      "name": "Super-Homem"
+    },
+    {
+      "id": 10,
+      "name": "Gavião Arqueiro"
+    }
+  ]
+}

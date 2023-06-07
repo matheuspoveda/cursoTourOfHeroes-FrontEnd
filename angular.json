@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -46,6 +47,12 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements":  [
+                {
+                  "replace": "src/environments/environments.ts",
+                  "with": "src/environments/environments.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -68,7 +75,8 @@
               "browserTarget": "cursoAngular:build:production"
             },
             "development": {
-              "browserTarget": "cursoAngular:build:development"
+              "browserTarget": "cursoAngular:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -93,15 +101,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "8d3e4382-cce3-4f46-a337-6f1e5a75ba13"
+    "analytics": "8d3e4382-cce3-4f46-a337-6f1e5a75ba13",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
